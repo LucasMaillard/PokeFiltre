@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+}
+
+#container{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.box{
+  display: flex;
+  flex-flow: column;
+  padding: 30px;
+  margin: 20px;
+  background: aqua;
+}
+.box2{
+  line-height: 1px;
+  display: flex;
+  flex-flow: column;
+  padding: 2px;
+  height: min-content;
+  margin: 10px;
+  background: gray;
+}

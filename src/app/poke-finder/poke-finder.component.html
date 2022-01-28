@@ -1,0 +1,22 @@
+<section id="container">
+<section class="box">
+<form>
+  <label for="name">Trouver des pokemons: </label><br/><br/>
+  <input id="name" type="text" [formControl]="name">
+  <button type="button" (click)="searchPokemon()">rechercher</button>
+</form>
+  <p>Vous recherchez : {{ name.value }}</p>
+</section>
+  <section class="box2">
+    <h4>Historique :</h4>
+  </section>
+    <div *ngFor="let search of searches"><section class="box2"><p>{{ search }}</p></section></div>
+</section>
+
+<div *ngFor="let data of datas">
+  <p>{{ data.base_experience }}</p>
+</div>
+
+
+
+
