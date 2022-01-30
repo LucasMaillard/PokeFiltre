@@ -16,12 +16,13 @@ export class PokeFinderComponent {
   constructor(private PokeAPIService:PokeAPIService ) { }
 
   searchPokemon(){
-    let search = this.name.value
+    let Search = this.name.value
+    let search = (Search.toLowerCase())
     var add = this.searches.push(search)
     console.log(search)
     this.PokeAPIService.getPokemons(search).subscribe((data:any) => {
       this.datas.push(data);
-      console.log(data)
+      console.log(data[0].name)
     });
 
 }
